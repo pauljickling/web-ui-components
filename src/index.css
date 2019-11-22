@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.aspect-ratio-43 {
+  position: relative;
+}
+
+.aspect-ratio-169 {
+  position: relative;
+}
+
+.aspect-ratio-43::after {
+  display: block;
+  content: '';
+  /* 4:3 aspect ratio */
+  padding-bottom: 75%;
+}
+
+.aspect-ratio-169::after {
+  display: block;
+  content: '';
+  /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+}
+
+img.aspect-ratio-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
