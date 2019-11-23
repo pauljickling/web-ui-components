@@ -12,6 +12,14 @@ code {
     monospace;
 }
 
+.App {
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+}
+
 .aspect-ratio-43 {
   position: relative;
 }
